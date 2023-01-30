@@ -535,7 +535,7 @@ namespace BlackOps2SoundStudio
         {
             if (newData == null || newData.Length == 0)
             {
-                MessageBox.Show("Conversion failed, ensure the file you provided is valid.",
+                MessageBox.Show("Conversion failed, ensure the file you provided is valid or check for missing DLL files.",
                                 "Black Ops II Sound Studio", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 if (newData != null) newData.Close();
                 return;

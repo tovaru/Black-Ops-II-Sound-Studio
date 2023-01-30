@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Windows.Forms;
 using BlackOps2SoundStudio.Encoders;
 
 namespace BlackOps2SoundStudio.Converter
@@ -160,26 +161,44 @@ namespace BlackOps2SoundStudio.Converter
 
             // Next we encode using libFLAC's native encoder because FFmpeg unfortunately
             // does not support --no-padding and --no-seektable at the moment. *sigh*
-            using (var reader = new WavReader(output))
-            using (var writer = new FlacWriter(fs, reader.BitDepth, reader.Channels, reader.SampleRate))
-            {
-                // Buffer for 1 second's worth of audio data
-                var buffer = new byte[1 * reader.Bitrate / 8];
-                int read;
-                do
+            try {
+                using (var reader = new WavReader(output))
+                using (var writer = new FlacWriter(fs, reader.BitDepth, reader.Channels, reader.SampleRate))
                 {
-                    OnConversionProgressChanged(new ConversionProgressChangedEventArgs {
-                        SourceFormat = ".wav",
-                        TargetFormat = ".flac",
-                        Progress = (int) (reader.InputStream.Position * 100 / reader.InputStream.Length)
-                    });
-                    read = reader.InputStream.Read(buffer, 0, buffer.Length);
-                    writer.Write(buffer, 0, read);
-                } while (read > 0);
-            }
+                    // Buffer for 1 second's worth of audio data
+                    var buffer = new byte[1 * reader.Bitrate / 8];
+                    int read;
+                    do
+                    {
+                        OnConversionProgressChanged(new ConversionProgressChangedEventArgs
+                        {
+                            SourceFormat = ".wav",
+                            TargetFormat = ".flac",
+                            Progress = (int)(reader.InputStream.Position * 100 / reader.InputStream.Length)
+                        });
+                        read = reader.InputStream.Read(buffer, 0, buffer.Length);
+                        writer.Write(buffer, 0, read);
+                    } while (read > 0);
+                }
 
-            output.Close();
-            return fs;
+                output.Close();
+                return fs;
+            } 
+            catch (TypeInitializationException ex)
+            {
+                if (ex.InnerException != null && ex.InnerException.InnerException != null)
+                {
+                    MessageBox.Show(ex.InnerException.InnerException.Message + " (or current version is not compatible)",
+                                        "Black Ops II Sound Studio", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    System.Windows.Forms.Application.Exit();
+                    return null;
+                }
+                else
+                {
+                    throw ex;
+                }
+            }
+            
         }
 
         public void ConvertToFLACAsync(string inputFile, ConvertOptions options, object userState = null)
