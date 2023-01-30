@@ -223,7 +223,7 @@ namespace BlackOps2SoundStudio
                 _currentPath = path;
 
                 // Update the UI.
-                Text = "Black Ops II Sound Studio by master131 - " + Path.GetFileName(path);
+                Text = "Black Ops II Sound Studio Extended by master131 - " + Path.GetFileName(path);
                 UpdateHeaderInformation();
                 UpdateAudioEntries();
 

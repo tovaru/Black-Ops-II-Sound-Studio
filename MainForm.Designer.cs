@@ -36,6 +36,15 @@
             this.headerPropertyGrid = new System.Windows.Forms.PropertyGrid();
             this.audioEntriesGroupBox = new System.Windows.Forms.GroupBox();
             this.audioEntriesDataGridView = new System.Windows.Forms.DataGridView();
+            this.audioEntryNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntryOffsetColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntrySizeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntryFormatColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntryLoopColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntryChannelsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntrySampleRateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntryHashColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.audioEntryReplacedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.audioEntryContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.playToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,15 +82,6 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skipConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.audioEntryNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntryOffsetColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntrySizeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntryFormatColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntryLoopColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntryChannelsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntrySampleRateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntryHashColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.audioEntryReplacedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).BeginInit();
             this.mainSplitContainer.Panel1.SuspendLayout();
             this.mainSplitContainer.Panel2.SuspendLayout();
@@ -202,6 +202,77 @@
             this.audioEntriesDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.audioEntriesDataGridView_CellFormatting);
             this.audioEntriesDataGridView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.audioEntriesDataGridView_CellMouseDown);
             this.audioEntriesDataGridView.SelectionChanged += new System.EventHandler(this.audioEntriesDataGridView_SelectionChanged);
+            // 
+            // audioEntryNameColumn
+            // 
+            this.audioEntryNameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntryNameColumn.HeaderText = "Name";
+            this.audioEntryNameColumn.Name = "audioEntryNameColumn";
+            this.audioEntryNameColumn.ReadOnly = true;
+            this.audioEntryNameColumn.Width = 60;
+            // 
+            // audioEntryOffsetColumn
+            // 
+            this.audioEntryOffsetColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntryOffsetColumn.HeaderText = "Offset";
+            this.audioEntryOffsetColumn.MinimumWidth = 80;
+            this.audioEntryOffsetColumn.Name = "audioEntryOffsetColumn";
+            this.audioEntryOffsetColumn.ReadOnly = true;
+            this.audioEntryOffsetColumn.Width = 80;
+            // 
+            // audioEntrySizeColumn
+            // 
+            this.audioEntrySizeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntrySizeColumn.HeaderText = "Size";
+            this.audioEntrySizeColumn.MinimumWidth = 70;
+            this.audioEntrySizeColumn.Name = "audioEntrySizeColumn";
+            this.audioEntrySizeColumn.ReadOnly = true;
+            this.audioEntrySizeColumn.Width = 70;
+            // 
+            // audioEntryFormatColumn
+            // 
+            this.audioEntryFormatColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntryFormatColumn.HeaderText = "Format";
+            this.audioEntryFormatColumn.Name = "audioEntryFormatColumn";
+            this.audioEntryFormatColumn.ReadOnly = true;
+            this.audioEntryFormatColumn.Width = 64;
+            // 
+            // audioEntryLoopColumn
+            // 
+            this.audioEntryLoopColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntryLoopColumn.HeaderText = "Loop";
+            this.audioEntryLoopColumn.Name = "audioEntryLoopColumn";
+            this.audioEntryLoopColumn.Width = 56;
+            // 
+            // audioEntryChannelsColumn
+            // 
+            this.audioEntryChannelsColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntryChannelsColumn.HeaderText = "Channels";
+            this.audioEntryChannelsColumn.Name = "audioEntryChannelsColumn";
+            this.audioEntryChannelsColumn.ReadOnly = true;
+            this.audioEntryChannelsColumn.Width = 76;
+            // 
+            // audioEntrySampleRateColumn
+            // 
+            this.audioEntrySampleRateColumn.HeaderText = "Sample Rate";
+            this.audioEntrySampleRateColumn.Name = "audioEntrySampleRateColumn";
+            this.audioEntrySampleRateColumn.Width = 60;
+            // 
+            // audioEntryHashColumn
+            // 
+            this.audioEntryHashColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.audioEntryHashColumn.HeaderText = "Hash";
+            this.audioEntryHashColumn.Name = "audioEntryHashColumn";
+            this.audioEntryHashColumn.ReadOnly = true;
+            // 
+            // audioEntryReplacedColumn
+            // 
+            this.audioEntryReplacedColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.audioEntryReplacedColumn.HeaderText = "Replaced";
+            this.audioEntryReplacedColumn.Name = "audioEntryReplacedColumn";
+            this.audioEntryReplacedColumn.ReadOnly = true;
+            this.audioEntryReplacedColumn.ToolTipText = "If this audio entry was replaced.";
+            this.audioEntryReplacedColumn.Width = 78;
             // 
             // audioEntryContextMenuStrip
             // 
@@ -506,77 +577,6 @@
             this.skipConversionToolStripMenuItem.Text = "Skip Conversion";
             this.skipConversionToolStripMenuItem.Click += new System.EventHandler(this.skipConversionToolStripMenuItem_Click);
             // 
-            // audioEntryNameColumn
-            // 
-            this.audioEntryNameColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntryNameColumn.HeaderText = "Name";
-            this.audioEntryNameColumn.Name = "audioEntryNameColumn";
-            this.audioEntryNameColumn.ReadOnly = true;
-            this.audioEntryNameColumn.Width = 60;
-            // 
-            // audioEntryOffsetColumn
-            // 
-            this.audioEntryOffsetColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntryOffsetColumn.HeaderText = "Offset";
-            this.audioEntryOffsetColumn.MinimumWidth = 80;
-            this.audioEntryOffsetColumn.Name = "audioEntryOffsetColumn";
-            this.audioEntryOffsetColumn.ReadOnly = true;
-            this.audioEntryOffsetColumn.Width = 80;
-            // 
-            // audioEntrySizeColumn
-            // 
-            this.audioEntrySizeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntrySizeColumn.HeaderText = "Size";
-            this.audioEntrySizeColumn.MinimumWidth = 70;
-            this.audioEntrySizeColumn.Name = "audioEntrySizeColumn";
-            this.audioEntrySizeColumn.ReadOnly = true;
-            this.audioEntrySizeColumn.Width = 70;
-            // 
-            // audioEntryFormatColumn
-            // 
-            this.audioEntryFormatColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntryFormatColumn.HeaderText = "Format";
-            this.audioEntryFormatColumn.Name = "audioEntryFormatColumn";
-            this.audioEntryFormatColumn.ReadOnly = true;
-            this.audioEntryFormatColumn.Width = 64;
-            // 
-            // audioEntryLoopColumn
-            // 
-            this.audioEntryLoopColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntryLoopColumn.HeaderText = "Loop";
-            this.audioEntryLoopColumn.Name = "audioEntryLoopColumn";
-            this.audioEntryLoopColumn.Width = 56;
-            // 
-            // audioEntryChannelsColumn
-            // 
-            this.audioEntryChannelsColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntryChannelsColumn.HeaderText = "Channels";
-            this.audioEntryChannelsColumn.Name = "audioEntryChannelsColumn";
-            this.audioEntryChannelsColumn.ReadOnly = true;
-            this.audioEntryChannelsColumn.Width = 76;
-            // 
-            // audioEntrySampleRateColumn
-            // 
-            this.audioEntrySampleRateColumn.HeaderText = "Sample Rate";
-            this.audioEntrySampleRateColumn.Name = "audioEntrySampleRateColumn";
-            this.audioEntrySampleRateColumn.Width = 60;
-            // 
-            // audioEntryHashColumn
-            // 
-            this.audioEntryHashColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.audioEntryHashColumn.HeaderText = "Hash";
-            this.audioEntryHashColumn.Name = "audioEntryHashColumn";
-            this.audioEntryHashColumn.ReadOnly = true;
-            // 
-            // audioEntryReplacedColumn
-            // 
-            this.audioEntryReplacedColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.audioEntryReplacedColumn.HeaderText = "Replaced";
-            this.audioEntryReplacedColumn.Name = "audioEntryReplacedColumn";
-            this.audioEntryReplacedColumn.ReadOnly = true;
-            this.audioEntryReplacedColumn.ToolTipText = "If this audio entry was replaced.";
-            this.audioEntryReplacedColumn.Width = 78;
-            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -591,7 +591,7 @@
             this.MainMenuStrip = this.mainMenuStrip;
             this.MinimumSize = new System.Drawing.Size(704, 423);
             this.Name = "MainForm";
-            this.Text = "Black Ops II Sound Studio by master131";
+            this.Text = "Black Ops II Sound Studio Extended by master131";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);

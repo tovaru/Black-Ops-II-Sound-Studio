@@ -69,7 +69,7 @@
             this.logoPictureBox.Location = new System.Drawing.Point(4, 4);
             this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(122, 130);
+            this.logoPictureBox.Size = new System.Drawing.Size(122, 156);
             this.logoPictureBox.TabIndex = 16;
             this.logoPictureBox.TabStop = false;
             // 
@@ -83,8 +83,8 @@
             this.mainLayoutPanel.Location = new System.Drawing.Point(12, 12);
             this.mainLayoutPanel.Name = "mainLayoutPanel";
             this.mainLayoutPanel.RowCount = 3;
-            this.mainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.54829F));
-            this.mainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.45171F));
+            this.mainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.63158F));
+            this.mainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.36842F));
             this.mainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.mainLayoutPanel.Size = new System.Drawing.Size(387, 357);
             this.mainLayoutPanel.TabIndex = 17;
@@ -101,7 +101,7 @@
             this.logoTextLayoutPanel.Name = "logoTextLayoutPanel";
             this.logoTextLayoutPanel.RowCount = 1;
             this.logoTextLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.logoTextLayoutPanel.Size = new System.Drawing.Size(381, 138);
+            this.logoTextLayoutPanel.Size = new System.Drawing.Size(381, 164);
             this.logoTextLayoutPanel.TabIndex = 0;
             // 
             // nameVersionLayoutPanel
@@ -114,8 +114,8 @@
             this.nameVersionLayoutPanel.Location = new System.Drawing.Point(133, 3);
             this.nameVersionLayoutPanel.Name = "nameVersionLayoutPanel";
             this.nameVersionLayoutPanel.RowCount = 2;
-            this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.21212F));
-            this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.78788F));
+            this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.53165F));
+            this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.46835F));
             this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -125,7 +125,7 @@
             this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.nameVersionLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.nameVersionLayoutPanel.Size = new System.Drawing.Size(245, 132);
+            this.nameVersionLayoutPanel.Size = new System.Drawing.Size(245, 158);
             this.nameVersionLayoutPanel.TabIndex = 17;
             // 
             // nameLayoutPanel
@@ -136,7 +136,7 @@
             this.nameLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.nameLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.nameLayoutPanel.Name = "nameLayoutPanel";
-            this.nameLayoutPanel.Size = new System.Drawing.Size(239, 54);
+            this.nameLayoutPanel.Size = new System.Drawing.Size(239, 77);
             this.nameLayoutPanel.TabIndex = 0;
             // 
             // nameLabel
@@ -145,18 +145,18 @@
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.nameLabel.Location = new System.Drawing.Point(3, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(226, 64);
+            this.nameLabel.Size = new System.Drawing.Size(230, 50);
             this.nameLabel.TabIndex = 0;
-            this.nameLabel.Text = "Black Ops II Sound Studio";
+            this.nameLabel.Text = "Black Ops II Sound Studio Extended";
             // 
             // versionLabel
             // 
             this.versionLabel.AutoSize = true;
             this.versionLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.versionLabel.Location = new System.Drawing.Point(235, 5);
+            this.versionLabel.Location = new System.Drawing.Point(3, 55);
             this.versionLabel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(80, 25);
+            this.versionLabel.Size = new System.Drawing.Size(61, 20);
             this.versionLabel.TabIndex = 1;
             this.versionLabel.Text = "Version ";
             // 
@@ -166,9 +166,9 @@
             this.versionLayoutPanel.Controls.Add(this.reservedLabel);
             this.versionLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.versionLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.versionLayoutPanel.Location = new System.Drawing.Point(3, 63);
+            this.versionLayoutPanel.Location = new System.Drawing.Point(3, 86);
             this.versionLayoutPanel.Name = "versionLayoutPanel";
-            this.versionLayoutPanel.Size = new System.Drawing.Size(239, 66);
+            this.versionLayoutPanel.Size = new System.Drawing.Size(239, 69);
             this.versionLayoutPanel.TabIndex = 1;
             // 
             // copyrightLabel
@@ -177,7 +177,7 @@
             this.copyrightLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyrightLabel.Location = new System.Drawing.Point(3, 0);
             this.copyrightLabel.Name = "copyrightLabel";
-            this.copyrightLabel.Size = new System.Drawing.Size(215, 50);
+            this.copyrightLabel.Size = new System.Drawing.Size(169, 40);
             this.copyrightLabel.TabIndex = 2;
             this.copyrightLabel.Text = "Copyright © 2013-2020 master131";
             // 
@@ -185,27 +185,27 @@
             // 
             this.reservedLabel.AutoSize = true;
             this.reservedLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reservedLabel.Location = new System.Drawing.Point(224, 0);
+            this.reservedLabel.Location = new System.Drawing.Point(3, 40);
             this.reservedLabel.Name = "reservedLabel";
-            this.reservedLabel.Size = new System.Drawing.Size(24, 400);
+            this.reservedLabel.Size = new System.Drawing.Size(131, 20);
             this.reservedLabel.TabIndex = 3;
             this.reservedLabel.Text = "All rights reserved.";
             // 
             // aboutRichTextBox
             // 
             this.aboutRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutRichTextBox.Location = new System.Drawing.Point(4, 148);
+            this.aboutRichTextBox.Location = new System.Drawing.Point(4, 174);
             this.aboutRichTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.aboutRichTextBox.Name = "aboutRichTextBox";
             this.aboutRichTextBox.ReadOnly = true;
-            this.aboutRichTextBox.Size = new System.Drawing.Size(379, 171);
+            this.aboutRichTextBox.Size = new System.Drawing.Size(379, 145);
             this.aboutRichTextBox.TabIndex = 14;
             this.aboutRichTextBox.Text = "";
             this.aboutRichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.aboutRichTextBox_LinkClicked);
             // 
             // AboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 376);
             this.Controls.Add(this.mainLayoutPanel);
